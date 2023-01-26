@@ -1,0 +1,1 @@
+window.analytics=function(){console.log("test");var n=0;console.log(n);var t=!1,e=function(){return n+=1};return document.addEventListener("click",e),{destroy:function(){document.removeEventListener("click",e),t=!0},getClicks:function(){return t?"Analitics is destroyed. Total clicks = ".concat(n):n}}}();
