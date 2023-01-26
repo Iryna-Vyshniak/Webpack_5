@@ -1,0 +1,51 @@
+@import '~normalize.css';
+@import './styles/roboto.css';
+
+$color: #c3deffd0;
+
+html {
+    min-height: 100vh;
+    background: url(../src/assets/cream-paper.png), linear-gradient(to bottom, rgb(255, 255, 255), rgb(3, 193, 251));
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body {
+    display: grid;
+    transition: all .5s;
+    min-height: 100vh;
+    user-select: none;
+    font-size: responsive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    max-width: 83.125rem;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: $color;
+    filter: drop-shadow(1px 1px 0.5px #004aba) drop-shadow(-1px -1px 1px #ffffff);
+    text-align: center;
+    color: $color;
+}
+
+.section__logo {
+    margin: 0 auto;
+    height: 22.5rem;
+    width: 22.5rem;
+    background-image: url('./assets/webpack-logo.png');
+    background-size: contain;
+    filter: drop-shadow(5px 5px 12px #4b93fe) drop-shadow(-5px -5px 12px #ffffff);
+}
