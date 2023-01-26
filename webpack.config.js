@@ -87,7 +87,6 @@ module.exports = {
         extractComments: {
           condition: /^\**!|@preserve|@license|@cc_on/i,
           filename: (fileData) => {
-            // The "fileData" argument contains object with "filename", "basename", "query" and "hash"
             return `${fileData.filename}.LICENSE.txt${fileData.query}`;
           },
           banner: (licenseFile) => {
