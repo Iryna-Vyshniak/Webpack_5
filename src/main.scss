@@ -46,6 +46,7 @@ h1 {
     height: 22.5rem;
     width: 22.5rem;
     background-image: url('./assets/webpack-logo.png');
+    background-repeat: no-repeat;
     background-size: contain;
     filter: drop-shadow(5px 5px 12px #4b93fe) drop-shadow(-5px -5px 12px #ffffff);
 }

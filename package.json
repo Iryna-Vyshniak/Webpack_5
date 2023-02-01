@@ -42,7 +42,6 @@
     "css-minimizer-webpack-plugin": "^4.2.2",
     "cssnano": "^5.1.14",
     "csv-loader": "^3.0.5",
-    "file-loader": "^6.2.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",

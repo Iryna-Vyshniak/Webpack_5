@@ -19,7 +19,14 @@ module.exports = {
   },
   output: {
     filename: filename('js'),
-    assetModuleFilename: 'assets/images/[hash][ext]',
+    assetModuleFilename: (pathData) => {
+      const filepath = path
+        .dirname(pathData.filename)
+        .split('/')
+        .slice(1)
+        .join('/');
+      return `${filepath}/[name][ext]`;
+    },
     path: path.resolve(__dirname, './dist/'),
     clean: true,
   },
@@ -98,8 +105,12 @@ module.exports = {
     minimize: true,
   },
   devServer: {
-    port: 4202,
+    port: 7777,
+    hot: true,
+    compress: true,
     watchFiles: ['./src/*'],
-    open: true,
+    static: {
+      directory: path.join(__dirname, './dist'),
+    },
   },
 };
