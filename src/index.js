@@ -1,6 +1,6 @@
 import Post from '@models/Post';
 import json from './assets/json';
-import WebpackLogo from './assets/webpack-logo.png';
+import WebpackLogo from './assets/images/webpack-logo.png';
 import xml from './assets/data.xml';
 import csv from './assets/people-100.csv';
 import './babel';
